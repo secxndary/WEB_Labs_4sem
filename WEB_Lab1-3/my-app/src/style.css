@@ -1,0 +1,39 @@
+table {
+    padding: 1% 0 0 4%;
+    border: 0px solid white;
+    /* border-collapse: collapse; */
+}
+
+
+td {
+    width: 50px;
+    height: 50px;
+    border: 0px solid beige;
+}
+
+
+.black {
+    background-color: peru;
+    width: 60px;
+    height: 60px;
+    /* border: 2px solid peru; */
+}
+
+
+.white {
+    background-color: bisque;
+    width: 60px;
+    height: 60px;
+    border: 1px solid peru;
+}
+
+
+.border, tr .border, td .border {
+    border: 0px solid white;
+    background: none;
+    text-align: center;
+    color: maroon;
+    font-size: 19px;
+    font-weight: bolder;
+
+}

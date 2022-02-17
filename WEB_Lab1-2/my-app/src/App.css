@@ -1,0 +1,64 @@
+.table {
+  border: 2px solid black;
+  border-collapse: collapse;
+  margin: 3%;
+}
+
+.th {
+  font-weight: 600;
+  background: #9240D5;
+  color: bisque;
+  font-size: large;
+  margin: 30%;
+  border: 2px solid black;
+  text-align: center;
+}
+
+.tr {
+  background-color: #A468D5;
+  color: blanchedalmond;
+  border: 2px solid black;
+  text-align: center;
+}
+
+td {
+  padding: 16px;
+}
+
+.bull {
+  background-color: #00BF32;
+}
+
+.bear {
+  background-color: #FC3F4D;
+}
+
+
+
+
+.white
+{
+  background-color: bisque;
+  width: 40px;
+  height: 40px;
+  border: 2px solid black;
+
+}
+
+.black
+{
+  background-color: peru;
+  width: 40px;
+  height: 40px;
+  border: 2px solid black;
+
+}
+
+.checkmate
+{
+  border: 2px solid black;
+  border-collapse: collapse;
+  margin-left: 50%;
+  margin-top: -320px;
+
+}
