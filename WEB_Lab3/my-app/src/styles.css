@@ -1,0 +1,38 @@
+input[type="radio"] {
+    display: none;
+}
+
+li {
+    font-size: 19px;
+    list-style: none;
+}
+
+#number {
+    padding: 2% 0 6% 2%;
+    font-size: 16px;
+}
+
+.fieldImg {
+    vertical-align: middle;
+    cursor: pointer;
+    height: 30px;
+    width: 36px;
+    margin: 0 8px 0 2px;
+}
+
+.listImg {
+    vertical-align: middle;
+    margin: 0 6px 0 0;
+    height: 20px;
+    width: 26px;
+    margin: -5px 6px 0 0;
+}
+
+#weightSpan {
+    font-weight: 500;
+}
+
+#labelNumField {
+    display: inline-block;
+    cursor: pointer;
+}

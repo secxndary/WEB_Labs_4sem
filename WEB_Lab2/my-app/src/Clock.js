@@ -66,7 +66,7 @@ class Clock extends Component {
 
 function tick() {
   render(
-    <Clock zone='+3:00' format='12' />,
+    <Clock zone='+10:00' format='24' />,
     document.getElementById('root')
   );
 }
