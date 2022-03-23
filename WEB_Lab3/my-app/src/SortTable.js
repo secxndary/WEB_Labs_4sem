@@ -60,13 +60,13 @@ class SortTable extends Component {
 
 
     sort(n) {
-        let direction = this.sorted[n] ? 1 : -1,
+        let res = this.sorted[n] ? 1 : -1,
             goodsCopy = [...this.goods].sort(function (a, b) {
                 if (a[n] > b[n]) {
-                    return direction;
+                    return res;
                 }
                 if (a[n] < b[n]) {
-                    return direction * -1;
+                    return res * -1;
                 }
                 return 0;
             });

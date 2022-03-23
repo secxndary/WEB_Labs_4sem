@@ -61,7 +61,7 @@ class PhoneInput extends Component {
                 name: "Литва",
                 code: '+370',
                 img: 'lt.png',
-                place: '+370 (__XX) ___-__-__',
+                place: '+370 (__) ___-__-__',
                 mask: "XXXX (XX) XXX-XX-XX",
                 count: 13
             },
@@ -128,9 +128,10 @@ class PhoneInput extends Component {
             </div>
         );
     }
-    
+
 
     handleChange = (e) => {
+        e.preventDefault();
         this.setState(
             {
                 number: e.target.value,
@@ -140,6 +141,7 @@ class PhoneInput extends Component {
                     if (this.state.number === c.code)
                         this.setState({
                             value: c.value,
+                            place: c.place,
                             img: c.img,
                             mask: c.mask,
                             count: c.count,
