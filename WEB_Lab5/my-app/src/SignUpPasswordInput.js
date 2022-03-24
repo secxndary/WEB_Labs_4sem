@@ -56,16 +56,16 @@ export class SignUpPasswordInput extends Component {
                     <div>
                         <input
                             type="password"
-                            placeholder="Введите пароль"
+                            placeholder="Enter password"
                             onChange={this.handlePassword}
                         />
                         {this.checkPassword()}
                         <input
                             type="password"
-                            placeholder="Повторите пароль"
+                            placeholder="Repeat password"
                             onChange={this.handleRepeat}
                         />
-                        <div>Пароли не совпадают.</div>
+                        <div className="notMatch">Passwords don't match.</div>
                     </div>
                 )
                 :
@@ -73,13 +73,13 @@ export class SignUpPasswordInput extends Component {
                     <div>
                         <input
                             type="password"
-                            placeholder="Введите пароль"
+                            placeholder="Enter password"
                             onChange={this.handlePassword}
                         />
                         {this.checkPassword()}
                         <input
                             type="password"
-                            placeholder="Повторите пароль"
+                            placeholder="Repeat password"
                             onChange={this.handleRepeat}
                         />
                     </div>

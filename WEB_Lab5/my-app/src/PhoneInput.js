@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 
 
@@ -7,10 +7,10 @@ export class PhoneInput extends Component {
 
     state = {
         key: 0,
-        name: 'Беларусь',
-        code: '+375',
-        img: 'by_.png',
-        place: '+375 (__) ___-__-__',
+        name: "Belarus",
+        code: "+375",
+        img: "by_.png",
+        place: "+375 (__) ___-__-__",
         display: false,
         count: 13,
         mask: "XXXX (XX) XXX-XX-XX",
@@ -21,55 +21,55 @@ export class PhoneInput extends Component {
         [
             {
                 key: 1,
-                name: 'Беларусь',
-                code: '+375',
-                img: 'by_.png',
-                place: '+375 (__) ___-__-__',
+                name: "Belarus",
+                code: "+375",
+                img: "by_.png",
+                place: "+375 (__) ___-__-__",
                 mask: "XXXX (XX) XXX-XX-XX",
                 count: 13
             },
             {
                 key: 2,
-                name: "Польша",
-                code: '+48',
-                img: 'pl.png',
-                place: '+48 ___-___-___',
+                name: "Poland",
+                code: "+48",
+                img: "pl.png",
+                place: "+48 ___-___-___",
                 mask: "XXX XXX-XXX-XXX",
                 count: 12
             },
             {
                 key: 3,
-                name: "Россия",
-                code: '+7',
-                img: 'ru.png',
-                place: '+7 (___) ___-__-__',
+                name: "Russia",
+                code: "+7",
+                img: "ru.png",
+                place: "+7 (___) ___-__-__",
                 mask: "XX (XXX) XXX-XX-XX",
                 count: 12
             },
             {
                 key: 4,
-                name: "Украина",
-                code: '+380',
-                img: 'ua.png',
-                place: '+380 (__) ___-__-__',
+                name: "Ukraine",
+                code: "+380",
+                img: "ua.png",
+                place: "+380 (__) ___-__-__",
                 mask: "XXXX (XX) XXX-XX-XX",
                 count: 13
             },
             {
                 key: 5,
-                name: "Литва",
-                code: '+370',
-                img: 'lt.png',
-                place: '+370 (__) ___-__-__',
+                name: "Lithuania",
+                code: "+370",
+                img: "lt.png",
+                place: "+370 (__) ___-__-__",
                 mask: "XXXX (XX) XXX-XX-XX",
                 count: 13
             },
             {
                 key: 6,
-                name: "Латвия",
-                code: '+371',
-                img: 'lv.png',
-                place: '+371 ____-____',
+                name: "Latvia",
+                code: "+371",
+                img: "lv.png",
+                place: "+371 ____-____",
                 mask: "XXXX XXXX-XXXX",
                 count: 12
             },
@@ -96,7 +96,7 @@ export class PhoneInput extends Component {
                         }
                         }>
                             <label>
-                                <img className='listImg' src={c.img} alt="" />
+                                <img className="listImg" src={c.img} alt="" />
                                 <input type="radio" value={c.name} />{c.name} {c.code}
                             </label>
                         </li>
@@ -110,10 +110,10 @@ export class PhoneInput extends Component {
     numberField() {
         return (
             <div>
-                <label id='labelNumField'>
+                <label id="labelNumField">
                     ▼
                     <img className="fieldImg" src={this.state.img} alt="" />
-                    <input type='tel'
+                    <input type="tel"
                         onClick={() => {
                             this.setState({ display: !this.state.display });
                             console.log(this.state.display);
@@ -167,7 +167,7 @@ export class PhoneInput extends Component {
 
     render() {
         return (
-            <div id='number'>
+            <div id="number">
                 {this.numberField()}
                 {this.state.display ? this.list() : null}
             </div>
