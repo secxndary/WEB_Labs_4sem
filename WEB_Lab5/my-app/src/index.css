@@ -1,0 +1,88 @@
+li {
+  font-size: 16px;
+  list-style: none;
+}
+
+#number {
+  font-size: 16px;
+}
+
+.fieldImg {
+  vertical-align: middle;
+  cursor: pointer;
+  height: 20px;
+  width: 26px;
+  margin: 0 0 0 2px;
+}
+
+.listImg {
+  vertical-align: middle;
+  margin: 0 6px 0 0;
+  height: 20px;
+  width: 26px;
+  margin: -5px 6px 0 0;
+}
+
+#labelNumField {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.radioLine {
+  margin: 3px 5px 6px 0;
+}
+
+#radioLine2 {
+  margin-left: 10px;
+}
+
+.line {
+  display: flex;
+}
+
+button {
+  margin-left: 5%;
+}
+
+select {
+  margin-top: 10px;
+}
+
+select, button, form, input {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+form {
+  padding: 3% 0 0 41%;
+}
+
+input {
+  display: block;
+  margin: 10px 0 10px 0;
+}
+
+.password {
+  width: 160px;
+  height: 5px;
+  margin: 2px;
+  border: 1px solid #000;
+}
+
+.password1 {
+  background: rgb(72, 255, 0);
+  height: 100%;
+}
+
+ul input[type="radio"] {
+  display: none;
+}
+
+img {
+  height: 10px;
+  width: 20px;
+  margin-bottom: -3px
+}
+
+li img {
+  margin: 0px 3px;
+}
