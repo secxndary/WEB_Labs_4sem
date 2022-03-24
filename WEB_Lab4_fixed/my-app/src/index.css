@@ -12,7 +12,14 @@ body {
   align-items: center;
 }
 
-button, select {
+.header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.button {
+  margin: 0 4px;
   height: 2em;
   font-size: 1rem;
   background-color: #fff;
@@ -20,10 +27,11 @@ button, select {
   border: 1px solid #dbdbdb;
   border-radius: 4px;
   cursor: pointer;
-}
-
-button:focus, select:focus {
-  outline: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: .25em .75em;
+  text-align: center;
 }
 
 table {
@@ -39,14 +47,14 @@ th {
   height: 36px;
 }
 
-button {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  padding: .25em .75em;
+td {
+  padding: 4px 8px;
+  vertical-align: middle;
   text-align: center;
+  border: 2px solid transparent;
 }
 
-select {
-  padding: .25em .5em;
+td:hover {
+  background-color: #eaeaea;
+  cursor: pointer;
 }

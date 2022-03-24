@@ -19,14 +19,16 @@ export class SignUpPasswordInput extends Component {
     };
 
     handleRepeat = (e) => {
-        this.state.password === e.target.value
-            ? this.setState({ disableBtn: false, showMessage: false },
+        this.state.password === e.target.value ?
+            this.setState({ disableBtn: false, showMessage: false },
                 () => this.props.disableBtn(this.state.disableBtn)
             )
-            : this.setState({ disableBtn: true, showMessage: true }, () =>
-                this.props.disableBtn(this.state.disableBtn)
+            :
+            this.setState({ disableBtn: true, showMessage: true },
+                () => this.props.disableBtn(this.state.disableBtn)
             );
     };
+
     checkPassword() {
         let password = this.state.password,
             check = 0,
@@ -42,10 +44,10 @@ export class SignUpPasswordInput extends Component {
         else if (password.length >= 8 && check >= 3) width = "100%";
         else if (password.length >= 6 && check === 1) width = "33%";
         else if (password.length >= 6 && check > 1 && check < 4) width = "66%";
-        else if (password.length >= 6 && check === 4) width = "100%";
+        else if (password.length >= 6 && check >= 4) width = "100%";
         return (
             <div className="password">
-                <div className="password1" style={{ width: width }} />
+                <div className="passwordProgress" style={{ width: width }} />
             </div>
         );
     }

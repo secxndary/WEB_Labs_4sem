@@ -24,7 +24,7 @@ export class SignUpForm extends Component {
             )
         }
         return (
-            <select>
+            <select defaultValue={12}>
                 {days}
             </select>
         )
@@ -33,7 +33,7 @@ export class SignUpForm extends Component {
     month() {
         let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
         return (
-            <select>
+            <select defaultValue={"August"}>
                 {months.map(month => {
                     return <option key={month}>{month}</option>
                 })}
@@ -49,7 +49,7 @@ export class SignUpForm extends Component {
             )
         }
         return (
-            <select>
+            <select defaultValue={2002}>
                 {years}
             </select>
         )

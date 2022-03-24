@@ -17,7 +17,7 @@ export default class Calendar extends Component {
     state = {
         date: this.props.date,
         currentDate: new Date(),
-        selectedDate: null
+        selectedDays: []
     };
 
 
@@ -41,17 +41,71 @@ export default class Calendar extends Component {
         this.setState({ date });
     };
 
+
+    // selected
     handleDayClick = date => {
         console.log(date);
-        this.setState({ selectedDate: date })
+        this.setState({ selectedDays: date })
         this.props.onChange(date);
     };
 
 
 
+    styleTd = (date, currentDate, week, selectedDays) => {
+        // if (week.getMonth() !== date.getMonth())
+        //     return { color: "lightgrey" };
+        for (let i = 0; i < selectedDays.length; i++) {
+            if (
+                (selectedDays[i].getDate() === date.getDate() &&
+                    selectedDays[i].getMonth() === date.getMonth() &&
+                    selectedDays[i].getFullYear() === date.getFullYear())
+
+            ) {
+                if (selectedDays[i].getDate() !== currentDate.getDate())
+                    return { background: "#d89fef" };
+            }
+        }
+        // if (
+        //     date.getDate() === currentDate.getDate() &&
+        //     date.getMonth() === currentDate.getMonth() &&
+        //     date.getFullYear() === currentDate.getFullYear()
+        // )
+        //     console.log(selectedDays.length);
+        // return { background: "#9fc4ee" };
+    };
+
+
+
+    selectDays = (day) => {
+        for (let i = 0; i < this.state.selectedDays.length; i++) {
+            if (
+                day.getDate() === this.state.selectedDays[i].getDate() &&
+                day.getMonth() === this.state.selectedDays[i].getMonth() &&
+                day.getFullYear() === this.state.selectedDays[i].getFullYear()
+            )
+                return this.setState(({ selectedDays }) => ({
+                    selectedDays: [
+                        ...selectedDays.slice(0, i),
+                        ...selectedDays.slice(i + 1),
+                    ],
+                }));
+        }
+        this.setState(({ selectedDays }) => ({
+            selectedDays: [...selectedDays, day],
+        }));
+        console.log(this.state.selectedDays.length);
+    };
+
+
+    // selectDays = (wdate) => {
+    //     this.setState({}, () => this.props.selectDays(wdate));
+    // };
+
+
+
     render() {
         const { years, monthNames, weekDayNames } = this.props;
-        const { currentDate, selectedDate } = this.state;
+        const { currentDate, selectedDays } = this.state;   // selected
         const monthData = calendar.getMonthData(this.state.date.getFullYear(), this.state.date.getMonth());
 
 
@@ -101,11 +155,21 @@ export default class Calendar extends Component {
                                         key={index}
                                         className={classnames('day', {
                                             'today': calendar.areEqual(date, new Date()),
-                                            'selected': calendar.areEqual(date, selectedDate),
+                                            // 'selected': calendar.areEqual(date, selectedDate),  // selected day
                                             'another': calendar.anotherMonth(date, new Date(this.state.date.getFullYear(), this.state.date.getMonth(), this.state.date.getDate()))
                                         })}
-                                        onClick={() => this.handleDayClick(date)}>
+                                        onClick={() => {
+                                            this.handleDayClick(date);
+                                            if (date.getMonth() === week.getMonth())
+                                                this.selectDays(date);
+                                        }}>
                                         {date.getDate()}
+                                        style={this.styleTd(
+                                            date,
+                                            this.currentDate,
+                                            week,
+                                            selectedDays
+                                        )}
                                     </td>
                                 )}
                             </tr>
