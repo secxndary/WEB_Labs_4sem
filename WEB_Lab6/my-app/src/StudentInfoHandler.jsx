@@ -11,9 +11,6 @@ export class StudentInfoHandler extends React.Component {
         this.handlerTelephone = null;
     }
 
-    // state = {
-    //     email: this.props.handlerMail
-    // }
 
     age(day, month, year) {
 
@@ -131,7 +128,7 @@ export class StudentInfoHandler extends React.Component {
                             <td>{this.props.handlerFac}</td>
                         </tr>
                         <tr>
-                        {/* {this.props.handlerCourse} */}
+                            {/* {this.props.handlerCourse} */}
                             <td>Course</td>
                             <td>{this.course(this.props.handlerStart)}</td>
                         </tr>
@@ -171,38 +168,5 @@ export class StudentInfoHandler extends React.Component {
                     </tbody>
                 </table> {console.log('handler state mail:' + this.props.handlerMail)}
             </div>);
-        {/* <tr>
-                                <td>Текущий возраст</td>
-                                <td>{this.age(student)}</td>
-                            </tr>
-                            <tr>
-                                <td>Факультет, курс, группа</td>
-                                <td>
-                                    {student.faculty}, {this.cours(student)}, {student.group}
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Специальность</td>
-                                <td>{student.speciality}</td>
-                            </tr>
-                            <tr>
-                                <td>Электронная почта</td>
-                                <td>{student.email}</td>
-                            </tr>
-                            <tr>
-                                <td>Оператор услуг ЭП</td>
-                                <td>{this.mailOperator(student)}</td>
-                            </tr>
-                            <tr>
-                                <td>Номер телефона</td>
-                                <td>{student.phoneNumber}</td>
-                            </tr>
-                            <tr>
-                                <td>Оператор услуг МС</td>
-                                <td>{this.phoneOperator(student)}</td>
-                            </tr> */}
-
-
-
     }
 }

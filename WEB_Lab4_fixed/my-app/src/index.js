@@ -12,6 +12,7 @@ export class Calendar extends React.Component {
     this.state = { date: new Date(), selectedDays: [] };
   }
 
+
   changeDate = (value) => {
     this.setState({ date: value });
   };
@@ -38,7 +39,7 @@ export class Calendar extends React.Component {
 
   render() {
     return (
-      <>
+      <div>
         <table className='tab'>
           <CalendarHead changeDate={this.changeDate} />
           <CalendarBody
@@ -46,10 +47,14 @@ export class Calendar extends React.Component {
             selectDays={this.selectDays}
             selectedDays={this.state.selectedDays}
           /></table>
-      </>
+      </div>
     );
   }
 }
+
+
+
+
 
 class CalendarHead extends React.Component {
   constructor(props) {
@@ -92,25 +97,31 @@ class CalendarHead extends React.Component {
 
   render() {
     return (
-      <>
+      <div>
         <div className='header'>
           <button onClick={this.prevMonth} className="button">{"<"}</button>
           {this.months[this.state.date.getMonth()]}
           {this.state.date.getFullYear()}
           <button onClick={this.nextMonth} className="button">{">"}</button></div>
-      </>
+      </div>
     );
   }
 }
 
+
+
+
+
 class CalendarBody extends React.Component {
   days = ["пн", "вт", "ср", "чт", "пт", "сб", "вс"];
   currentDate = new Date();
+
   startDay(date) {
     let startDay;
     date.getDay() === 0 ? (startDay = 6) : (startDay = date.getDay() - 1);
     return startDay;
   }
+
   oneMonth(date) {
     let fullMonth = [],
       day = 1 - this.startDay(date),
@@ -161,6 +172,7 @@ class CalendarBody extends React.Component {
       1
     ),
       selectedDays = this.props.selectedDays;
+      
     return (
       <table className='tab'>
         <thead>
@@ -198,10 +210,10 @@ class CalendarBody extends React.Component {
   }
 }
 
+
+
 ReactDOM.render(
-  <React.StrictMode>
-    <Calendar />
-  </React.StrictMode>,
+  <Calendar />,
   document.getElementById('root')
 );
 reportWebVitals();

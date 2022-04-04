@@ -7,23 +7,6 @@ import { StudentInfoHandler } from "./StudentInfoHandler";
 
 
 export class StudentInfo extends React.Component {
-    // constructor(props) {
-    //     super(props);
-    //     this.state = {
-    //         FIO: "Aaaaaaa Bbbbbb Ccccccc",
-    //         birthDate: "16.05.2000",
-    //         uniYear: "2018",
-    //         faculty: "IT",
-    //         group: "10",
-    //         speciality: "POIT",
-    //         email: "abcd@mail.ru",
-    //         phoneNumber: "80291000000",
-    //     };
-    // }
-
-
-
-
 
     constructor(props) {
         super(props);
@@ -73,8 +56,6 @@ export class StudentInfo extends React.Component {
             group: this.groupRef.value,
             speciality: this.specRef.value
         });
-
-
 
     }
 
@@ -158,7 +139,8 @@ export class StudentInfo extends React.Component {
                 </div>
 
                 <div>
-                    <StudentInfoHandler handlerFirstProps={this.state.firstName}
+                    <StudentInfoHandler 
+                        handlerFirstProps={this.state.firstName}
                         handlerSecondProps={this.state.secondName}
                         handlerThirdProps={this.state.thirdName}
                         handlerMail={this.state.mail}
