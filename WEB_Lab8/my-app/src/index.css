@@ -1,0 +1,76 @@
+input, select, img, textarea {
+    display: block;
+}
+
+.comment {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+
+body {
+    font-size: 16px;
+}
+
+input {
+    margin: 10px 0 10px 0;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    padding: 2px 0 2px 6px;
+    height: 22px;
+}
+
+input[type="submit"] {
+    padding: 2px 8px;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+textarea {
+    height: 100px;
+    width: 168px;
+    resize: none;
+    padding: 4px 0 2px 4px;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+}
+
+select {
+    height: 24px;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    margin: 7px 0;
+    padding: 2px;
+}
+
+button {
+    height: 2em;
+    font-size: 14px;
+    background-color: rgb(248, 248, 248);
+    color: #2f2f2f;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 8px;
+    margin-top: 50px;
+}
+
+.commentContainer {
+    display: flex;
+    margin-top: 10px;
+}
+
+.commentText {
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.name {
+    font-weight: 600;
+}
+
+img {
+    border-radius: 50%;
+}
