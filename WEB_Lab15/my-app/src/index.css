@@ -1,0 +1,785 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+.sorts {
+  margin: 20px 0 20px 470px;
+  /* display: inline-block; */
+
+}
+
+.sorts button {
+  background-color: #b0b0b0;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 3px;
+  transition: all 0.3s
+}
+
+.sorts button:hover {
+  cursor: pointer;
+  background-color: #848484
+}
+
+.discount h2 {
+  display: inline-block;
+  width: 48px;
+  /* height: 40px; */
+  background-color: rgb(248, 54, 54);
+  text-align: center;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+.discount h2+h2 {
+  margin: 0 7px 5px 7px;
+}
+
+.prices {
+  display: flex;
+}
+
+.prices h3 {
+  color: rgb(83, 83, 83);
+  margin-left: 10px;
+  text-decoration: line-through;
+}
+
+
+input {
+  height: 30px;
+}
+
+/* .one_good {
+  display: flex;
+  margin: 30px 100px;
+  /* padding: 0; 
+} 
+
+/* .one_good img {
+  /* height: 200px; 
+  margin-right: 10px;
+} */
+
+.text {
+  margin: 0;
+  padding: 0;
+}
+
+.sorts {
+  margin: 20px 100px;
+  display: inline-block;
+}
+
+
+
+
+/* .discount h2 {
+  display: inline-block;
+  width: 50px;
+  height: 40px;
+  background-color: rgb(245, 58, 58);
+  text-align: center;
+}
+
+.discount h2+h2 {
+  margin: 7px;
+} */
+/* 
+.discount button {
+  background-color: #faa403;
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 7px;
+  transition: all 0.3s
+}
+
+.discount button[disabled] {
+  background-color: #fcce79;
+}
+
+.discount button[disabled]:hover {
+  background-color: #fcce79;
+  color: white;
+  cursor: default;
+}
+
+.discount button:hover {
+  cursor: pointer;
+  background-color: #fa7a03;
+  color: white;
+} */
+
+.prices {
+  display: flex;
+}
+
+.prices h3 {
+  color: rgb(83, 83, 83);
+  margin-left: 10px;
+  text-decoration: line-through;
+}
+
+form {
+  margin: 10px;
+}
+
+form input {
+  display: block;
+}
+
+#portal {
+  position: relative;
+  z-index: 999;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  height: 130px;
+  width: 260px;
+  border-radius: 20px;
+  background: #fff;
+  padding: 30px;
+}
+
+.modal button {
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 3px;
+  transition: all 0.3s;
+  border-radius: 5px;
+}
+
+.modal button:hover {
+  cursor: pointer;
+}
+
+.to_order {
+  background-color: #f72525;
+}
+
+.to_order:hover {
+  background-color: #c20606;
+}
+
+.to_catalog {
+  background-color: #2c0084;
+}
+
+.to_catalog:hover {
+  background-color: #794ecf;
+}
+
+.progress_bar_bg {
+  background: #fff;
+  width: 160px;
+  height: 5px;
+  margin: 3px;
+  border: 1px solid #000;
+}
+
+.progress_bar {
+  background: rgb(180, 9, 9);
+  height: 100%;
+  margin: 0;
+}
+
+.sign_in input {
+  display: block
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.one_good {
+  display: flex;
+  width: 550px;
+  /* margin: 30px 500px; */
+  margin: 0 0 50px 0;
+  padding: 30px;
+  border: 2px solid rgb(140, 140, 140);
+  transition: 0.9s;
+}
+
+.one_good:hover {
+  transform: scale(1.02);
+}
+
+.one_good img {
+  height: 250px;
+  margin-right: 10px;
+}
+
+.text {
+  margin: 0;
+  padding: 0;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.title {
+  font-size: 30px;
+  margin-left: 558px;
+  margin-top: 15px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+
+img:hover {
+  cursor: pointer;
+}
+
+.new {
+  padding: 5px;
+}
+
+button {
+  font-size: 16px;
+  border: 2px solid rgb(220, 220, 220);
+  padding: 6px;
+  /* background: transparent; */
+  cursor: pointer;
+  /* border-radius: 10px; */
+}
+
+td {
+  font-size: 18px;
+}
+
+
+
+
+
+
+ul {
+  border: none;
+}
+
+.numberOfGoods {
+  height: 20px;
+}
+
+
+li {
+  font-size: 16px;
+  list-style: none;
+  /* margin-left: 32px; */
+}
+
+/* #number {  
+  font-size: 16px;
+} */
+
+.fieldImg {
+  vertical-align: middle;
+  cursor: pointer;
+  height: 20px;
+  width: 26px;
+  margin: 0 0 0 2px;
+}
+
+.listImg {
+  vertical-align: middle;
+  margin: 0 6px 0 0;
+  height: 20px;
+  width: 26px;
+  margin: -5px 6px 0 0;
+}
+
+#labelNumField {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.radioLine {
+  margin: 0 5px 6px 0;
+}
+
+#radioLine2 {
+  margin-left: 25px;
+}
+
+/* button {
+  height: 2em;
+  font-size: 1rem;
+  background-color: rgb(248, 248, 248);
+  color: #2f2f2f;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:disabled {
+  height: 2em;
+  font-size: 1rem;
+  background-color: rgb(252, 78, 78);
+  color: #e9e9e9;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  cursor: pointer;
+} */
+
+input {
+  padding: 2px 0 2px 6px;
+}
+
+input, select {
+  /* height: 20px; */
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+}
+
+.line {
+  display: flex;
+}
+
+button {
+  margin-left: 1%;
+  margin-top: 1%;
+}
+
+select {
+  margin-top: 10px;
+}
+
+select, form, input {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+form {
+  padding: 3% 0 0 0;
+}
+
+input {
+  /* display: block; */
+  margin: 10px 0 10px 0;
+}
+
+.notMatch {
+  font-weight: 600;
+  font-size: 14px;
+  color: red;
+}
+
+.password {
+  width: 165px;
+  height: 5px;
+  margin: 2px;
+  border: 1px solid rgb(167, 167, 167);
+}
+
+.passwordProgress {
+  background: rgb(72, 255, 0);
+  height: 100%;
+}
+
+/* ul input[type="radio"] {
+  display: none;
+} */
+
+/* img {
+  height: 10px;
+  width: 20px;
+  margin-bottom: -3px
+} */
+
+/* li img {
+  margin: 0px 3px;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h3, h5, h6, table {
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background: rgb(110, 110, 180);
+  color: white;
+}
+
+.nav-links {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.one_good {
+  display: flex;
+  margin: 30px 100px;
+  padding: 15px;
+}
+
+.one_good img {
+  height: 200px;
+  margin-right: 10px;
+}
+
+.text {
+  margin: 0;
+  padding: 0;
+}
+
+.sorts {
+  margin: 20px 100px;
+  display: inline-block;
+}
+
+/* .sorts button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 3px;
+  transition: all 0.3s
+} */
+
+/* .sorts button:hover {
+  cursor: pointer;
+  background-color: #008CBA
+} */
+
+.discount h2 {
+  display: inline-block;
+  width: 50px;
+  height: 40px;
+  background-color: rgb(245, 58, 58);
+  text-align: center;
+}
+
+.discount h2+h2 {
+  margin: 7px;
+}
+
+.prices {
+  display: flex;
+}
+
+.prices h3 {
+  color: rgb(83, 83, 83);
+  margin-left: 10px;
+  text-decoration: line-through;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 3px;
+}
+
+.container {
+  margin: 30px 100px;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background: rgb(110, 110, 180);
+  color: white;
+}
+
+.nav-links {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.one_good {
+  display: flex;
+  margin: 30px 0px;
+}
+
+.one_good img {
+  height: 200px;
+  margin-right: 10px;
+}
+
+.text {
+  margin: 0;
+  padding: 0;
+}
+
+.sorts {
+  margin: 20px 0px;
+  display: inline-block;
+}
+
+/* .sorts button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition: all 0.3s;
+  margin: 0 20px 0 0;
+}
+
+.sorts button:hover {
+  cursor: pointer;
+  background-color: #008cba;
+} */
+
+/* .discount h2 {
+  display: inline-block;
+  width: 50px;
+  height: 40px;
+  background-color: rgb(245, 58, 58);
+  text-align: center;
+}
+
+.discount h2+h2 {
+  margin: 7px;
+} */
+
+.discount button, .empty button, form button, .sign_in button {
+  background-color: #faa403;
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 7px;
+  transition: all 0.3s;
+}
+
+.discount button[disabled] {
+  background-color: #fcce79;
+}
+
+.discount button[disabled]:hover {
+  background-color: #fcce79;
+  color: white;
+  cursor: default;
+}
+
+.discount button:hover, .empty button:hover, form button:hover, .sign_in button:hover {
+  cursor: pointer;
+  background-color: #faf60e;
+  color: #000;
+}
+
+.prices {
+  display: flex;
+}
+
+.prices h3 {
+  color: rgb(83, 83, 83);
+  margin-left: 10px;
+  text-decoration: line-through;
+}
+
+form {
+  margin: 10px;
+}
+
+form input {
+  display: block;
+}
+
+#portal {
+  position: relative;
+  z-index: 999;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  height: 300px;
+  width: 600px;
+  border-radius: 20px;
+  background: #fff;
+  padding: 20px;
+}
+
+.modal button, .good_in_cart button, .next, .prev {
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 3px;
+  transition: all 0.3s;
+  border-radius: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.to_order, .good_in_cart button, .next {
+  background-color: #f72525;
+}
+
+.to_order:hover, .good_in_cart button:hover, .next:hover {
+  background-color: #c20606;
+}
+
+.to_catalog, .prev {
+  background-color: #3966fa;
+}
+
+.to_catalog:hover, .prev:hover {
+  background-color: #3015c5;
+}
+
+.progress_bar_bg {
+  background: #fff;
+  width: 200px;
+  height: 7px;
+  margin: 3px;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+
+.progress_bar {
+  background: rgb(26, 50, 102);
+  height: 100%;
+  margin: 0;
+}
+
+.sign_in input {
+  display: block;
+}
+
+.signUpIn li {
+  height: 50px;
+  width: 250px;
+  color: #fff;
+  background: rgb(53, 18, 119);
+  text-decoration: none;
+  margin: 10px;
+  text-align: center;
+}
+
+.search, .signUpIn, .empty h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.search label {
+  margin: 5px;
+}

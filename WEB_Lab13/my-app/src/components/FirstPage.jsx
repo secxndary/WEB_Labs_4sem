@@ -47,7 +47,7 @@ class FirstPage extends React.Component {
                     <h3>Name:{item.name}</h3>
                     <h4>Price:{(item.price * (100 - item.discount)) / 100}$</h4>
                     <input type="number" name="numberOfGoods" className="numberOfGoods" defaultValue="0" onChange={(e) => this.inputOnChange(e, item)} />
-                    <input type="checkbox" name="inCart" checked onChange={(e) => this.checkboxOnChange(e, item)} />
+                    {/* <input type="checkbox" name="inCart" checked onChange={(e) => this.checkboxOnChange(e, item)} /> */}
                     <button onClick={(e) => this.props.deleteFromCart(item)}>Delete</button>
                 </div>;
             })}
